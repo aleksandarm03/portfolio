@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+
+<body>
+    <header class="contact-header">
+        <div class="container">
+            <h1>Kontakt</h1>
+            <p>Ako imate pitanja, ideje za saradnju ili samo želite da razmenimo iskustva, slobodno me kontaktirajte
+                putem bilo koje od navedenih platformi.</p>
+            <div class="header-buttons">
+                <a href="index.html" class="btn">Početna</a>
+                <a href="./src/CV-Aleksandar.pdf" target="_blank" class="btn">CV</a>
+                <a href="#projekti.html" class="btn">Projekti</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-info">
+        <div class="container">
+            <h2>Kontakt podaci</h2>
+            <ul class="contact-list">
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>Email: </span>
+                    <span id="email">accam003@gmail.com</span>
+                    <button onclick="copyEmail()" class="copy-button">Kopiraj</button>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <span>Telefon: </span>
+                    <span>+381 66 809 85 01</span>
+                </li>
+                <li>
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn: </span>
+                    <a href="https://www.linkedin.com/in/aleksandarm03" target="_blank">Aleksandar
+                        Mladenović</a>
+                </li>
+                <li>
+                    <i class="fab fa-github"></i>
+                    <span>GitHub: </span>
+                    <a href="https://github.com/aleksandarm03" target="_blank">aleksandar-mladenovic</a>
+                </li>
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Lokacija: </span>
+                    <span>Kragujevac, Srbija</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2025 Aleksandar Mladenović. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyEmail() {
+            const email = document.getElementById('email').innerText;
+            navigator.clipboard.writeText(email).then(() => {
+                alert('Email je kopiran u clipboard: ' + email);
+            });
+        }
+    </script>
+</body>
+
+</html>
