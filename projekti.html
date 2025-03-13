@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekti</title>
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projekti.css">
+
+    <script src="projekti.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="projects-header">
+        <div class="container">
+            <h1>Projekti</h1>
+            <p class="description">Ovde možete pogledati projekte na kojima sam radio <br> Ovo je samo početak jer
+                neprestano radim na novim izazivnijim projektima <3 .<br> Kliknite na linkove za detalje.</p>
+            <a href="kontakt.html" class="cta-button">Kontaktirajte me</a>
+        </div>
+    </header>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button class="filter-button active" data-filter="all">Svi projekti</button>
+        <button class="filter-button" data-filter="web">Web aplikacije</button>
+        <button class="filter-button" data-filter="mobile">Mobilne aplikacije</button>
+        <button class="filter-button" data-filter="api">API</button>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <!-- Projekat SU7 landing page -->
+             <!--KATEGORIJE:
+                web
+                mobile
+                api
+             
+             -->
+            <div class="project-card scroll-animate" data-category="web">
+                <img src="./src/su7 project pic.png" alt="Web aplikacija" class="project-img" >
+                <div class="project-info">
+                    <h3>Xiaomi SU7 landing page</h3>
+                    <p>Xiaomi SU7 Landing Page je moderna i responzivna web aplikacija dizajnirana da predstavi Xiaomi
+                        SU7, električni automobil koji kombinuje inovaciju, performanse i elegantan dizajn. Sajt
+                        uključuje interaktivnu galeriju sa automatski pomerajućim slikama, kontakt formu za slanje
+                        poruka, kao i informacije o ključnim karakteristikama i specifikacijama vozila. Cilj aplikacije
+                        je da privuče korisnike da kupe SU7 i pruži osnovne informacije na jednom mestu, uz vizuelno
+                        privlačan i funkcionalan dizajn koji radi na svim uređajima.</p>
+                    <a href="https://github.com/aleksandarm03/SU7-landing-page" target="_blank"
+                        class="project-link">Pogledaj na GitHubu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Brzi linkovi -->
+            <div class="footer-section">
+                <h3>Brzi linkovi</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </footer>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Main JavaScript -->
+  
+</body>
+
+</html>
